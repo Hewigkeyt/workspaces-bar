@@ -83,6 +83,9 @@ class WorkspacesBar extends PanelMenu.Button {
     _update_ws() {
     	// destroy old workspaces bar buttons
     	this.ws_bar.destroy_all_children();
+        this.ws_bar.style_class = 'desktop-label-workspaces';
+        this.style_class = 'desktop-label-workspaces';
+
     	
     	// get number of workspaces
         this.ws_count = global.workspace_manager.get_n_workspaces();
